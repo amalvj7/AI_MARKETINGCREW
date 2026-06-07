@@ -1,0 +1,23 @@
+# Secrets — never commit API keys
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# CrewAI / tool output
+*.log
+output/
+db/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

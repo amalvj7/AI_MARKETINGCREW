@@ -1,0 +1,223 @@
+market_research_task:
+  description: >
+    Conduct comprehensive market research for "{product_name}" targeting
+    {target_audience}.
+
+    Product description: {product_description}
+    Marketing budget: {budget}
+
+    Analyze the market landscape, customer behavior, competitor positioning,
+    emerging trends, opportunities, and challenges.
+
+    This research will serve as the foundation for the marketing strategy.
+    Focus on actionable insights that can influence audience targeting,
+    content creation, and campaign planning.
+
+  expected_output: >
+    A detailed markdown report containing:
+    - Industry overview
+    - Market trends
+    - Competitor analysis
+    - Customer behavior insights
+    - Market opportunities
+    - Potential challenges
+    - Key findings and recommendations
+
+  agent: marketing_head
+
+
+
+
+
+marketing_strategy_task:
+  description: >
+    Using the market research findings, develop a comprehensive marketing
+    strategy for "{product_name}" aimed at {target_audience} within a
+    {budget} budget.
+
+    Define target audience segments, customer personas, brand positioning,
+    marketing objectives, content pillars, channel recommendations,
+    campaign opportunities, and success metrics.
+
+    Ensure the strategy aligns with business goals and provides clear
+    direction for content creation and marketing execution.
+
+  expected_output: >
+    A marketing strategy document containing:
+    - Executive summary
+    - Target audience
+    - Customer personas
+    - Value proposition
+    - Marketing objectives
+    - Content pillars
+    - Recommended channels
+    - Campaign ideas
+    - Key performance indicators (KPIs)
+
+  agent: marketing_head
+
+
+
+social_content_research_task:
+  description: >
+    Analyze the approved marketing strategy and identify content opportunities
+    for social media platforms.
+
+    Research audience interests, trending content formats, engagement
+    opportunities, and platform-specific content ideas.
+
+    The findings from this task will be used to build the social media
+    content calendar.
+
+  expected_output: >
+    A content research report containing:
+    - Audience interests
+    - Content themes
+    - Content pillar mapping
+    - Trending topics
+    - Platform-specific opportunities
+    - Recommended content ideas
+
+  agent: social_media_content_writer
+
+
+
+
+
+content_calendar_task:
+  description: >
+    Create a structured social media content calendar using the content
+    research findings and marketing strategy.
+
+    Plan content distribution across platforms while maintaining a balance
+    between educational, promotional, entertaining, and engagement-focused
+    content.
+
+  expected_output: >
+    A content calendar containing:
+    - Publishing date
+    - Platform
+    - Content type
+    - Content pillar
+    - Topic
+    - Objective
+    - Suggested CTA
+
+  agent: social_media_content_writer
+
+
+
+social_media_draft_task:
+  description: >
+    Create complete social media content drafts based on the approved
+    content calendar.
+
+    Ensure that each post aligns with the brand voice, audience interests,
+    and marketing objectives while maximizing engagement potential.
+
+  expected_output: >
+    A collection of social media drafts containing:
+    - Post copy
+    - Captions
+    - Call-to-action (CTA)
+    - Hashtag recommendations
+    - Engagement prompts
+
+  agent: social_media_content_writer
+
+
+reel_script_task:
+  description: >
+    Create engaging short-form video scripts for reels and shorts based
+    on the content calendar and marketing strategy.
+
+    Focus on audience retention, storytelling, engagement, and clear
+    messaging throughout the script.
+
+  expected_output: >
+    A collection of reel and shorts scripts containing:
+    - Video title
+    - Hook
+    - Scene-by-scene breakdown
+    - Narration or dialogue
+    - Visual suggestions
+    - CTA
+
+  agent: social_media_content_writer
+
+
+
+blog_content_research_task:
+  description: >
+    Research blog content opportunities based on the approved marketing
+    strategy, target audience, and business objectives.
+
+    Identify valuable topics that address customer pain points, industry
+    trends, common questions, and educational opportunities.
+
+    Focus on generating blog ideas that can establish authority, build
+    trust, and support long-term content marketing goals.
+
+  expected_output: >
+    A blog content research report containing:
+    - Recommended blog topics
+    - Topic rationale
+    - Target audience for each topic
+    - Content objectives
+    - Suggested article angles
+    - Supporting research insights
+    - Recommended blog structure
+
+  agent: blog_content_writer
+
+
+
+
+blog_draft_task:
+  description: >
+    Using the approved blog content research, create a complete and
+    well-structured blog article.
+
+    The article should be informative, engaging, easy to understand,
+    and aligned with the marketing strategy and audience needs.
+
+    Ensure the content follows logical flow and provides actionable
+    value to readers.
+
+  expected_output: >
+    A complete blog draft containing:
+    - Blog title
+    - Introduction
+    - Section headings
+    - Detailed content under each section
+    - Conclusion
+    - Call-to-action (CTA)
+
+    Format the entire output in markdown.
+
+  agent: blog_content_writer
+  markdown: true
+
+
+
+
+
+seo_optimization_task:
+  description: >
+    Review all generated content including blog articles, social media
+    posts, captions, and reel scripts.
+
+    Perform keyword research, search intent validation, and SEO optimization
+    to improve discoverability, relevance, and search engine visibility.
+
+  expected_output: >
+    An SEO optimization report containing:
+    - Primary keywords
+    - Secondary keywords
+    - Search intent analysis
+    - SEO recommendations
+    - Optimized meta title
+    - Optimized meta description
+    - Content improvement suggestions
+
+  agent: seo_specialist
